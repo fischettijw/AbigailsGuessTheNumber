@@ -54,6 +54,7 @@ namespace AbigailsGuessTheNumber
             lblLowestHigh.Visible = false;
             cbxHelp.Checked = false;
             txtDebug.Text = "";
+            this.AcceptButton = btnGenerate;
         }
 
         private void btnGenerate_Click(object sender, EventArgs e)
@@ -76,6 +77,7 @@ namespace AbigailsGuessTheNumber
             btnGuess.Enabled = true;
             txtMaxNumber.Enabled = false;
             txtGuess.Enabled = true;
+            this.AcceptButton = btnGuess;
             txtGuess.SelectionStart = 0;
             txtGuess.SelectionLength = txtGuess.Text.Length;
             txtGuess.Select();

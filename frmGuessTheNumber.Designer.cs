@@ -143,7 +143,7 @@
             // 
             this.lblHighLow.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHighLow.ForeColor = System.Drawing.Color.Red;
-            this.lblHighLow.Location = new System.Drawing.Point(62, 368);
+            this.lblHighLow.Location = new System.Drawing.Point(62, 372);
             this.lblHighLow.Name = "lblHighLow";
             this.lblHighLow.Size = new System.Drawing.Size(412, 23);
             this.lblHighLow.TabIndex = 9;
@@ -177,12 +177,11 @@
             this.lblHighestLow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblHighestLow.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHighestLow.ForeColor = System.Drawing.Color.Red;
-            this.lblHighestLow.Location = new System.Drawing.Point(66, 332);
+            this.lblHighestLow.Location = new System.Drawing.Point(51, 332);
             this.lblHighestLow.Name = "lblHighestLow";
             this.lblHighestLow.Size = new System.Drawing.Size(95, 30);
             this.lblHighestLow.TabIndex = 12;
             this.lblHighestLow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblHighestLow.Visible = false;
             // 
             // lblLowestHigh
             // 
@@ -194,18 +193,16 @@
             this.lblLowestHigh.Size = new System.Drawing.Size(95, 30);
             this.lblLowestHigh.TabIndex = 13;
             this.lblLowestHigh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblLowestHigh.Visible = false;
             // 
             // lblHighestLowLBL
             // 
             this.lblHighestLowLBL.AutoSize = true;
-            this.lblHighestLowLBL.Location = new System.Drawing.Point(64, 315);
+            this.lblHighestLowLBL.Location = new System.Drawing.Point(49, 315);
             this.lblHighestLowLBL.Name = "lblHighestLowLBL";
             this.lblHighestLowLBL.Size = new System.Drawing.Size(99, 13);
             this.lblHighestLowLBL.TabIndex = 14;
             this.lblHighestLowLBL.Text = "Highest Low Guess";
             this.lblHighestLowLBL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblHighestLowLBL.Visible = false;
             // 
             // lblLowestHighLBL
             // 
@@ -216,7 +213,6 @@
             this.lblLowestHighLBL.TabIndex = 15;
             this.lblLowestHighLBL.Text = "Lowest High Guess";
             this.lblLowestHighLBL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblLowestHighLBL.Visible = false;
             // 
             // cbxHelp
             // 
