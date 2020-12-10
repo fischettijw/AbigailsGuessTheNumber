@@ -182,6 +182,7 @@
             this.lblHighestLow.Size = new System.Drawing.Size(95, 30);
             this.lblHighestLow.TabIndex = 12;
             this.lblHighestLow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblHighestLow.Visible = false;
             // 
             // lblLowestHigh
             // 
@@ -193,6 +194,7 @@
             this.lblLowestHigh.Size = new System.Drawing.Size(95, 30);
             this.lblLowestHigh.TabIndex = 13;
             this.lblLowestHigh.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblLowestHigh.Visible = false;
             // 
             // lblHighestLowLBL
             // 
@@ -203,6 +205,7 @@
             this.lblHighestLowLBL.TabIndex = 14;
             this.lblHighestLowLBL.Text = "Highest Low Guess";
             this.lblHighestLowLBL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblHighestLowLBL.Visible = false;
             // 
             // lblLowestHighLBL
             // 
@@ -213,6 +216,7 @@
             this.lblLowestHighLBL.TabIndex = 15;
             this.lblLowestHighLBL.Text = "Lowest High Guess";
             this.lblLowestHighLBL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblLowestHighLBL.Visible = false;
             // 
             // cbxHelp
             // 
@@ -223,6 +227,7 @@
             this.cbxHelp.TabIndex = 16;
             this.cbxHelp.Text = "HELP";
             this.cbxHelp.UseVisualStyleBackColor = true;
+            this.cbxHelp.CheckedChanged += new System.EventHandler(this.cbxHelp_CheckedChanged);
             // 
             // frmGuessTheNumber
             // 

@@ -48,6 +48,11 @@ namespace AbigailsGuessTheNumber
             txtMaxNumber.SelectionStart = 0;
             txtMaxNumber.SelectionLength = txtMaxNumber.Text.Length;
             txtMaxNumber.Select();
+            lblHighestLowLBL.Visible = false;
+            lblLowestHighLBL.Visible = false;
+            lblHighestLow.Visible = false;
+            lblLowestHigh.Visible = false;
+            cbxHelp.Checked = false;
             txtDebug.Text = "";
         }
 
@@ -129,5 +134,22 @@ namespace AbigailsGuessTheNumber
             txtGuess.Select();
         }
 
+        private void cbxHelp_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbxHelp.Checked == true)
+            {
+                lblHighestLowLBL.Visible = true;
+                lblLowestHighLBL.Visible = true;
+                lblHighestLow.Visible = true;
+                lblLowestHigh.Visible = true;
+            }
+            else
+            {
+                lblHighestLowLBL.Visible = false;
+                lblLowestHighLBL.Visible = false;
+                lblHighestLow.Visible = false;
+                lblLowestHigh.Visible = false;
+            }
+        }
     }
 }
