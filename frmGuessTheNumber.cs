@@ -15,6 +15,9 @@ namespace AbigailsGuessTheNumber
         int secretNumber;
         int numOfGuesses;
         int guess;
+        int lowestHigh;
+        int highestLow;
+
         public frmGuessTheNumber()
         {
             InitializeComponent();
@@ -82,9 +85,12 @@ namespace AbigailsGuessTheNumber
         {
             numOfGuesses += 1;
             txtNumGuesses.Text = numOfGuesses.ToString();
+
             try
             {
                 guess = Convert.ToInt32(txtGuess.Text);
+                lowestHigh = Convert.ToInt32(lblLowestHigh.Text);
+                highestLow = Convert.ToInt32(lblHighestLow.Text);
             }
             catch (Exception)
             {
@@ -97,11 +103,19 @@ namespace AbigailsGuessTheNumber
             if (guess < secretNumber)
             {
                 lblHighLow.Text = "Last Guess was TOO LOW";
+                if (guess > highestLow)
+                {
+                    lblHighestLow.Text = guess.ToString();
+                }
             }
 
             if (guess > secretNumber)
             {
                 lblHighLow.Text = "Last Guess was TOO HIGH";
+                if (guess < lowestHigh)
+                {
+                    lblLowestHigh.Text = guess.ToString();
+                }
             }
 
             if (guess == secretNumber)

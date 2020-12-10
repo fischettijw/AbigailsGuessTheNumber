@@ -45,6 +45,7 @@
             this.lblLowestHigh = new System.Windows.Forms.Label();
             this.lblHighestLowLBL = new System.Windows.Forms.Label();
             this.lblLowestHighLBL = new System.Windows.Forms.Label();
+            this.cbxHelp = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lblGuesses
@@ -176,7 +177,7 @@
             this.lblHighestLow.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblHighestLow.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHighestLow.ForeColor = System.Drawing.Color.Red;
-            this.lblHighestLow.Location = new System.Drawing.Point(62, 332);
+            this.lblHighestLow.Location = new System.Drawing.Point(66, 332);
             this.lblHighestLow.Name = "lblHighestLow";
             this.lblHighestLow.Size = new System.Drawing.Size(95, 30);
             this.lblHighestLow.TabIndex = 12;
@@ -196,22 +197,32 @@
             // lblHighestLowLBL
             // 
             this.lblHighestLowLBL.AutoSize = true;
-            this.lblHighestLowLBL.Location = new System.Drawing.Point(78, 315);
+            this.lblHighestLowLBL.Location = new System.Drawing.Point(64, 315);
             this.lblHighestLowLBL.Name = "lblHighestLowLBL";
-            this.lblHighestLowLBL.Size = new System.Drawing.Size(63, 13);
+            this.lblHighestLowLBL.Size = new System.Drawing.Size(99, 13);
             this.lblHighestLowLBL.TabIndex = 14;
-            this.lblHighestLowLBL.Text = "HighestLow";
+            this.lblHighestLowLBL.Text = "Highest Low Guess";
             this.lblHighestLowLBL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblLowestHighLBL
             // 
             this.lblLowestHighLBL.AutoSize = true;
-            this.lblLowestHighLBL.Location = new System.Drawing.Point(408, 315);
+            this.lblLowestHighLBL.Location = new System.Drawing.Point(392, 315);
             this.lblLowestHighLBL.Name = "lblLowestHighLBL";
-            this.lblLowestHighLBL.Size = new System.Drawing.Size(66, 13);
+            this.lblLowestHighLBL.Size = new System.Drawing.Size(99, 13);
             this.lblLowestHighLBL.TabIndex = 15;
-            this.lblLowestHighLBL.Text = "Lowest High";
+            this.lblLowestHighLBL.Text = "Lowest High Guess";
             this.lblLowestHighLBL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cbxHelp
+            // 
+            this.cbxHelp.AutoSize = true;
+            this.cbxHelp.Location = new System.Drawing.Point(13, 539);
+            this.cbxHelp.Name = "cbxHelp";
+            this.cbxHelp.Size = new System.Drawing.Size(54, 17);
+            this.cbxHelp.TabIndex = 16;
+            this.cbxHelp.Text = "HELP";
+            this.cbxHelp.UseVisualStyleBackColor = true;
             // 
             // frmGuessTheNumber
             // 
@@ -219,6 +230,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(535, 560);
+            this.Controls.Add(this.cbxHelp);
             this.Controls.Add(this.lblLowestHighLBL);
             this.Controls.Add(this.lblHighestLowLBL);
             this.Controls.Add(this.lblLowestHigh);
@@ -263,6 +275,7 @@
         private System.Windows.Forms.Label lblLowestHigh;
         private System.Windows.Forms.Label lblHighestLowLBL;
         private System.Windows.Forms.Label lblLowestHighLBL;
+        private System.Windows.Forms.CheckBox cbxHelp;
     }
 }
 
